@@ -10,15 +10,14 @@
 </head>
 <body>
 
-  <button id="themeToggle" class="theme-toggle" title="Chuyển đổi sáng/tối">
-    <i class="fas fa-moon"></i>
-  </button>
+  <button id="themeToggle" class="theme-toggle" title="Chuyển đổi sáng/tối"><i class="fas fa-moon"></i></button>
 
   <header>
     <div class="logo">PNNT</div>
     <nav>
       <a href="#hero">Home</a>
       <a href="#about">About</a>
+      <a href="#process">Process</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -29,110 +28,125 @@
   <section id="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="greeting">TATTOO DESIGNER & FREELANCER</p>
+      <p class="greeting">TATTOO DESIGNER & UX/UI ENTHUSIAST</p>
       <h1>Phan Nguyễn <span>Nhân Tâm</span></h1>
-      <div class="hero-avatar">
-        <img src="Phong.jpg" alt="Phan Nguyễn Nhân Tâm">
-      </div>
-      <p class="school">🎓 Đại học Gia Định — TP. Hồ Chí Minh</p>
-      <div class="style-tags">
-        <span>Cyber Tribal</span>
-        <span>Dark Lettering</span>
-        <span>Biomech</span>
-        <span>Custom Flash</span>
-      </div>
-      <p class="slogan">"Your story, my lines."</p>
+      <p class="school">🎓 Sinh viên CNKT Số — Đại học Gia Định (TP.HCM)</p>
+      <p class="slogan">"Your story, my lines. Your experience, my design."</p>
       <a href="#contact" class="btn">ĐẶT LỊCH NGAY</a>
     </div>
   </section>
 
   <!-- About -->
   <section id="about">
-    <h2 class="section-title">Về tôi</h2>
-    <p>Tôi là Phan Nguyễn Nhân Tâm, sinh viên <strong>Đại học Gia Định (TP.HCM)</strong>, hiện vẫn đang đi học nhưng song song đó vẫn nhận commission thiết kế tattoo. Tôi không gò mình vào một style cố định, mạnh nhất là <strong>Cyber Tribal</strong> kết hợp với biomech, Dark Lettering và Custom Flash. Nhưng quan trọng nhất với tôi là mỗi thiết kế phải là duy nhất, không đụng hàng, không xài mẫu có sẵn. Ai đặt cũng phải ra được một bản của riêng họ.</p>
-    <p>Trước giờ tôi có làm sale và kinh doanh nhỏ nên cũng quen nói chuyện với khách. Kỹ năng tôi tự hào nhất không phải là cầm bút, mà là <strong>nghe</strong>. Nghe họ muốn gì, ngay cả khi họ chưa biết diễn tả ra sao, thì tôi hỏi đúng câu để kéo ý đó ra. Tôi cũng hay dùng AI như Midjourney lúc brainstorm texture và layout, nhưng là để lấy cảm hứng thôi, không copy nguyên. Còn lại tôi vẫn phác tay, vẽ digital, kiểm soát từng đường kim.</p>
-    <p>Tôi làm vì thích, vẽ vì tin. Mỗi hình xăm là một câu chuyện, và tôi chỉ là người kể lại bằng đường nét.</p>
+    <h2 class="section-title">// Về tôi</h2>
+    <p>Tôi là <strong>Phan Nguyễn Nhân Tâm</strong>, sinh viên ngành <strong>Công nghệ Kỹ thuật Số</strong> tại Đại học Gia Định (TP.HCM). Song song việc học, tôi nhận commission thiết kế tattoo với phong cách chủ đạo: <strong>Cyber Tribal, Dark Lettering, Biomech, Custom Flash</strong>.</p>
+    <p>Tôi áp dụng tư duy <strong>UX/UI</strong> vào quy trình thiết kế tattoo: nghiên cứu khách hàng, phác thảo, prototype, testing (feedback), và hoàn thiện sản phẩm cuối cùng.</p>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <h2 class="section-title">// Quy trình làm việc</h2>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-comments"></i></div>
+        <h4>1. Research & Empathize</h4>
+        <p>Nghe khách kể chuyện, đặt câu hỏi đúng để hiểu họ muốn gì — ngay cả khi họ chưa biết diễn tả.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-pencil-alt"></i></div>
+        <h4>2. Ideate & Sketch</h4>
+        <p>Phác thảo tay 2-3 layout, dùng Midjourney tham khảo texture, gửi khách chọn hướng.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-tablet-alt"></i></div>
+        <h4>3. Digital & Prototype</h4>
+        <p>Scan phác thảo → line art Procreate → tô bóng + texture → mockup lên da thật.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+        <h4>4. Feedback & Final</h4>
+        <p>Khách xem mockup, góp ý chỉnh sửa. Chốt thiết kế cuối cùng.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    <h2 class="section-title">Dự án tiêu biểu</h2>
+    <h2 class="section-title">// Dự án tiêu biểu</h2>
 
     <div class="project-card">
-      <div class="project-img">
-        <img src="source-code.jpg" alt="Source Code">
-      </div>
+      <div class="project-img"><img src="source-code.jpg" alt="Source Code"></div>
       <div class="project-info">
         <span class="project-tag">Full Sleeve</span>
         <h3>"Source Code"</h3>
-        <p class="project-story"><strong>Khách:</strong> Nam, 26 tuổi. Gặp tôi lúc lạc lối, vừa nghỉ việc, bỏ ngang mối quan hệ dài. Tôi hỏi: "Có lần nào ông phải tự làm lại từ đầu chưa?" Anh kể từng trầm cảm, bỏ học, rồi tự học code đổi ngành.</p>
-        <p><strong>Ý tưởng:</strong> Tribal truyền thống bị xé toạc, nhét mạch điện tử cyberpunk vào — như tự viết lại chính mình.</p>
-        <p><strong>Quy trình:</strong> Buổi 1 — Nghe & ghi keyword, phác thô. Buổi 2 — Lên Midjourney lấy reference texture, phác tay full layout → scan → line art Procreate → tô bóng + texture → mockup.</p>
-        <span class="role">Vai trò: Tư vấn → Brainstorm → Phác thảo → Digital → Mockup</span>
+        <p><strong>Khách:</strong> Nam, 26 tuổi — lạc lối sau nghỉ việc & chia tay.</p>
+        <p><strong>Insight:</strong> Từng trầm cảm, tự học code để đổi đời → ý tưởng: Tribal bị xé toạc, nhét mạch cyberpunk vào — như tự viết lại chính mình.</p>
+        <p><strong>Quy trình:</strong> Buổi 1 — nghe & ghi keyword, phác thô. Buổi 2 — Midjourney ref texture → phác tay full layout → scan → line art Procreate → tô bóng → mockup.</p>
+        <div class="feedback-box">
+          <p class="feedback-text">"Tâm không chỉ vẽ, mà còn kể được đúng câu chuyện tôi muốn nói. Nhìn bản final tôi thấy chính mình trong đó."</p>
+          <span class="feedback-author">— Khách hàng dự án Source Code</span>
+        </div>
+        <span class="role">Vai trò: UX Research → Ideate → Prototype → Final Design</span>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-img">
-        <img src="neon-roots.png" alt="Neon Roots">
-      </div>
+      <div class="project-img"><img src="neon-roots.png" alt="Neon Roots"></div>
       <div class="project-info">
         <span class="project-tag">Chest Piece</span>
         <h3>"Neon Roots"</h3>
-        <p class="project-story"><strong>Khách:</strong> Nữ, 24 tuổi. Là dancer, muốn thiết kế trước ngực thể hiện chuyển động và nguồn cội: "Tao muốn nhìn vô thấy nó đang chảy, nhưng vẫn có gốc rễ."</p>
-        <p><strong>Ý tưởng:</strong> Hệ rễ cây phát sáng neon cyberpunk, mọc từ xương quai xanh lan ra vai. Dây leo biomech quấn quanh rễ.</p>
-        <p><strong>Quy trình:</strong> Buổi 1 — Nghe nhạc dancer, ghi keyword: chảy, rễ, neon. Phác 3 layout. Buổi 2 — Midjourney tham khảo rễ phát sáng + dây leo cơ khí. Chốt layout → scan → line art Procreate → neon glow → mockup da.</p>
-        <span class="role">Vai trò: Tư vấn → Phác 3 bản → Digital → Mockup</span>
+        <p><strong>Khách:</strong> Nữ, 24 tuổi — dancer chuyên nghiệp.</p>
+        <p><strong>Insight:</strong> Muốn thiết kế "đang chảy nhưng vẫn có gốc rễ" → ý tưởng: Rễ cây phát sáng neon cyberpunk mọc từ xương quai xanh, dây leo biomech quấn quanh.</p>
+        <p><strong>Quy trình:</strong> Buổi 1 — nghe nhạc dancer hay dùng, ghi keyword: chảy, rễ, neon. Phác 3 layout. Buổi 2 — Midjourney ref rễ phát sáng + dây leo cơ khí → chốt layout → scan → line art Procreate → neon glow → mockup da.</p>
+        <div class="feedback-box">
+          <p class="feedback-text">"Nhìn bản thiết kế mà tôi muốn khóc. Đúng kiểu tôi muốn mà không biết nói sao — Tâm tự tìm ra được."</p>
+          <span class="feedback-author">— Khách hàng dự án Neon Roots</span>
+        </div>
+        <span class="role">Vai trò: UX Research → Ideate → Prototype → Final Design</span>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
   <section id="skills">
-    <h2 class="section-title">Kỹ năng & Công cụ</h2>
+    <h2 class="section-title">// Kỹ năng & Công cụ</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <div class="skill-icon"><i class="fas fa-pen-fancy"></i></div>
         <h4>Cyber Tribal / Custom</h4>
-        <div class="bar"><div class="fill" style="width:85%"></div></div>
-        <span>85%</span>
+        <div class="bar"><div class="fill" style="width:85%"></div></div><span>85%</span>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><i class="fas fa-pencil-alt"></i></div>
         <h4>Phác thảo tay & Digital</h4>
-        <div class="bar"><div class="fill" style="width:90%"></div></div>
-        <span>90%</span>
+        <div class="bar"><div class="fill" style="width:90%"></div></div><span>90%</span>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
         <h4>Procreate / Photoshop</h4>
-        <div class="bar"><div class="fill" style="width:80%"></div></div>
-        <span>80%</span>
+        <div class="bar"><div class="fill" style="width:80%"></div></div><span>80%</span>
       </div>
       <div class="skill-card">
         <div class="skill-icon"><i class="fas fa-robot"></i></div>
         <h4>AI (Midjourney) texture</h4>
-        <div class="bar"><div class="fill" style="width:75%"></div></div>
-        <span>75%</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div><span>75%</span>
       </div>
       <div class="skill-card">
-        <div class="skill-icon"><i class="fas fa-comments"></i></div>
-        <h4>Tư vấn & Giao tiếp khách</h4>
-        <div class="bar"><div class="fill" style="width:90%"></div></div>
-        <span>90%</span>
+        <div class="skill-icon"><i class="fas fa-users"></i></div>
+        <h4>UX Research & Empathy</h4>
+        <div class="bar"><div class="fill" style="width:90%"></div></div><span>90%</span>
       </div>
       <div class="skill-card">
-        <div class="skill-icon"><i class="fas fa-book-open"></i></div>
-        <h4>Kể chuyện bằng hình</h4>
-        <div class="bar"><div class="fill" style="width:85%"></div></div>
-        <span>85%</span>
+        <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+        <h4>Iterate & Feedback</h4>
+        <div class="bar"><div class="fill" style="width:85%"></div></div><span>85%</span>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact">
-    <h2 class="section-title">Liên hệ</h2>
+    <h2 class="section-title">// Liên hệ</h2>
     <div class="contact-grid">
       <div class="contact-info">
         <p><i class="fas fa-envelope"></i> wocphogg006.art@gmail.com</p>
@@ -160,13 +174,8 @@
     const icon = toggle.querySelector('i');
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('light-mode');
-      if (document.body.classList.contains('light-mode')) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-      } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-      }
+      icon.classList.toggle('fa-moon');
+      icon.classList.toggle('fa-sun');
     });
   </script>
 </body>
