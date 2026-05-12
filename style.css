@@ -10,10 +10,58 @@ body {
   background: #0a0e17;
   line-height: 1.8;
   transition: all 0.4s;
+  position: relative;
 }
 
 h1, h2, h3, .section-title {
   font-family: 'Merriweather', serif;
+}
+
+/* === PARTICLES === */
+#particles {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+}
+.particle {
+  position: absolute;
+  bottom: -10px;
+  background: #4a8fe7;
+  border-radius: 50%;
+  opacity: 0.35;
+  animation: floatUp linear infinite;
+}
+@keyframes floatUp {
+  from { transform: translateY(0) scale(1); opacity: 0.5; }
+  to { transform: translateY(-110vh) scale(0.2); opacity: 0; }
+}
+
+/* === ICON ANIMATIONS === */
+.icon-pulse { animation: iconPulse 2s ease-in-out infinite; }
+.icon-spin { animation: iconSpin 4s linear infinite; }
+.icon-bounce { animation: iconBounce 1.5s ease-in-out infinite; }
+.icon-glow { animation: iconGlow 2s ease-in-out infinite; }
+.icon-bounce-small { animation: iconBounceSmall 2s ease-in-out infinite; }
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.7; }
+}
+@keyframes iconSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes iconGlow {
+  0%, 100% { text-shadow: 0 0 5px rgba(74,143,231,0.5); }
+  50% { text-shadow: 0 0 20px rgba(74,143,231,1); }
+}
+@keyframes iconBounceSmall {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 
 /* Light Mode */
@@ -51,6 +99,7 @@ body.light-mode .social-btn:hover { background: #1a5fcd; color: #fff; }
 body.light-mode .btn { color: #1a5fcd; border-color: #1a5fcd; }
 body.light-mode .btn:hover { background: #1a5fcd; color: #fff; }
 body.light-mode .hero-avatar { border-color: #1a5fcd; }
+body.light-mode .particle { background: #1a5fcd; }
 
 .theme-toggle {
   position: fixed; top: 80px; right: 20px; z-index: 999;
@@ -68,7 +117,8 @@ header {
   border-bottom: 1px solid #1e2d4a; position: sticky; top: 0; z-index: 100;
 }
 .logo { font-family: 'Merriweather', serif; font-size: 1.6rem; font-weight: 700; color: #4a8fe7; letter-spacing: 4px; }
-nav a { margin-left: 24px; text-decoration: none; color: #8899b4; font-weight: 500; font-size: 0.9rem; transition: color 0.3s; }
+nav a { margin-left: 20px; text-decoration: none; color: #8899b4; font-weight: 500; font-size: 0.85rem; transition: color 0.3s; }
+nav a i { margin-right: 4px; }
 nav a:hover { color: #4a8fe7; }
 
 #hero {
@@ -81,6 +131,7 @@ nav a:hover { color: #4a8fe7; }
 }
 .hero-content { position: relative; z-index: 1; }
 .greeting { font-size: 0.85rem; color: #4a8fe7; letter-spacing: 4px; font-weight: 600; margin-bottom: 14px; }
+.greeting i { margin-right: 6px; }
 #hero h1 { font-size: 3.5rem; font-weight: 700; color: #fff; }
 #hero h1 span { color: #4a8fe7; }
 
@@ -95,11 +146,13 @@ nav a:hover { color: #4a8fe7; }
 .slogan { font-family: 'Merriweather', serif; font-size: 1.3rem; color: #8899b4; font-style: italic; margin-bottom: 28px; }
 
 .section-title { color: #4a8fe7; font-size: 1.8rem; margin-bottom: 28px; }
+.section-title i { margin-right: 10px; }
 
 #about, #process, #projects, #skills, #contact {
   max-width: 960px; margin: 60px auto; padding: 45px 40px;
   background: #0d1220; border-radius: 14px; border: 1px solid #1e2d4a;
   animation: slideUp 0.8s ease;
+  position: relative; z-index: 1;
 }
 #about p { margin-bottom: 14px; color: #b0c0d0; }
 #about strong { color: #fff; }
@@ -167,6 +220,7 @@ nav a:hover { color: #4a8fe7; }
   text-decoration: none; font-weight: 600; font-size: 0.9rem; letter-spacing: 2px;
   transition: all 0.3s;
 }
+.btn i { margin-right: 6px; }
 .btn:hover { background: #4a8fe7; color: #0a0e17; box-shadow: 0 0 32px rgba(74,143,231,0.5); transform: scale(1.04); }
 
 .social-links { display: flex; gap: 14px; margin-top: 20px; }
@@ -189,7 +243,7 @@ footer { text-align: center; padding: 28px; color: #3a4d6b; font-size: 0.8rem; b
 
 @media (max-width: 700px) {
   header { padding: 12px 16px; }
-  nav a { margin-left: 8px; font-size: 0.7rem; }
+  nav a { margin-left: 6px; font-size: 0.68rem; }
   #hero h1 { font-size: 2.2rem; }
   .hero-avatar { width: 130px; height: 130px; }
   .project-card { flex-direction: column; }
